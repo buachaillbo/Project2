@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Flexbox</title>
+		<link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="reset.css">
+		<style type="text/css">
+
+		body{
+			font-family: roboto;
+		}
+
+		ul{
+			width: 90%;
+			margin-left: auto;
+			margin-right: auto;
+			list-style-type: none; /*Remove Bullets*/
+			padding: 0;	
+		}
+		li{
+			font-family: Dosis;
+			padding:20px 10px;
+			text-align: center;
+			font-size: 2em;
+			
+		}
+		li:hover{
+			transition:all .8s ease;
+			text-decoration: underline;
+		}
+		#logoNav{
+
+			font-size: 2em;
+			font-weight: bold;
+		}
+		
+		a{
+			text-decoration: none;
+			color: #fff;
+		}
+
+		.content{
+			background-color: #F5D76E;
+			height: 500px;
+		}
+		
+		#landing{
+			width: 60%;
+			margin-right: auto;
+			margin-left: auto;
+			font-size: 0px;
+		}
+		#full-page{
+			background-color: #fff;
+			margin-top:60px;
+			margin-bottom: 160px;
+			text-align: center;
+		}
+		#footer{
+			background-color: #F5D76E;
+			padding-top:100px;
+			padding-bottom: 30px;
+			text-align: center;
+		}
+		
+		#landing-graphic{
+			margin-top: 100px;
+			}
+
+		#landing-image{
+			display: block;
+			width: 300px;
+			margin-right: auto;
+			margin-left: auto;
+
+			}
+		h1{
+			text-align: center;
+			padding-top: 150px;
+			font-family: dosis;
+			font-weight: 300;
+			font-size: 55px;
+		}
+
+		
+
+		@media screen and (min-width: 800px){
+			#landing-message{
+				vertical-align: top;
+				display: inline-block;
+				width: 50%;
+			}
+			#logoNav{
+				margin-right: 15%;
+			}
+			#landing-image{
+				width: 400px;
+			}
+
+			#landing-graphic{
+				display: inline-block;
+				width: 50%;
+			}
+
+			ul{
+				text-align: center;
+			}
+
+			li{
+				display: inline-block;
+				font-size: 1.5em;
+				text-align: center;
+			}
+		}
+
+		</style>
+</head>
+<body>
+	<div class="content" >
+		<nav>
+			<ul>
+				<a href="#"><li id="logoNav">CODE INSTITUTE</li></a>
+				<a href="#"><li>Home</li></a>
+				<a href="#"><li>Projects</li></a>
+				<a href="#"><li>About</li></a>
+				<a href="#"><li>Contact</li></a>
+			</ul>
+		</nav>
+
+		<div id="landing">
+				<div id="landing-message"><h1>Make Creative Clever Fun Code. Simple.</h1></div>
+				<div id="landing-graphic"><img id="landing-image" src="img/laptop.png" alt="laptop" width="400"></div>
+		</div>
+
+		<div id="full-page">			
+			<h1>It's not a Bug, It's a Feature.</h1>
+		</div>	
+
+		<div id="footer">			
+			<p>copyright 2016 &copy;</p>
+		</div>	
+
+	</div>
+	
+	
+
+</body>
+</html>
